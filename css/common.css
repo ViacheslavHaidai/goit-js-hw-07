@@ -14,9 +14,30 @@ body {
 }
 
 .item {
-  background-color: beige;
-  width: 200px;
+  background-color: #f6f6fe;
+  width: 300px;
+  list-style: none;
+  font-family: Montserrat, sans-serif;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  padding: 0 6px;
+  padding-bottom: 12px;
+  border-radius: 4px;
 }
 .item-child {
-  border: 2px #212121;
+  border: 1px solid #212121;
+  border-radius: 4px;
+  list-style: none;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+  padding: 6px;
+}
+.list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 40px;
 }
