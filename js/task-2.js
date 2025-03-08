@@ -25,3 +25,11 @@ const images = [
   },
 ];
 console.log(images);
+const gallery = document.querySelector(".gallery");
+function createGallery(arr) {
+  return arr
+    .map((item) => `<img src="${item.url}" alt="${item.alt}" width="360">`)
+    .join("");
+}
+
+gallery.insertAdjacentHTML("beforeend", createGallery(images));
