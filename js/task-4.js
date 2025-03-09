@@ -18,3 +18,7 @@ function handleSubmit(event) {
   }
   form.reset();
 }
+const classToBtn = document.querySelector(".login-form button");
+classToBtn.classList.add("form-btn");
+const classLabel = document.querySelectorAll(".login-form label");
+classLabel.forEach((addClass) => addClass.classList.add("classLabel"));

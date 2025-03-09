@@ -6,3 +6,5 @@ textInput.addEventListener("input", (event) => {
     textOtput.textContent = event.currentTarget.value;
   }
 });
+textInput.style.padding = "4px";
+textInput.style.width = "200px";
