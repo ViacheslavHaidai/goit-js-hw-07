@@ -89,3 +89,44 @@ body {
   color: #fafafa;
   border: none;
 }
+.div-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: 300px;
+  background-color: #f6f6fe;
+  border-radius: 4px;
+}
+.input {
+  width: 70px;
+  height: 30px;
+}
+.btn-create {
+  width: 66px;
+  height: 30px;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 4px;
+  color: #f6f6fe;
+}
+.btn-destroy {
+  width: 66px;
+  height: 30px;
+  background-color: #ff4e4e;
+  border: none;
+  border-radius: 4px;
+  color: #f6f6fe;
+}
+.boxes {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  background-color: #f6f6fe;
+  width: auto;
+  margin-top: 60px;
+  height: auto;
+}
