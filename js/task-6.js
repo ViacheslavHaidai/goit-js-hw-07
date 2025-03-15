@@ -15,7 +15,9 @@ inputNumber.classList.add("input");
 btnCreate.classList.add("btn-create");
 btnDestroy.classList.add("btn-destroy");
 createBox.classList.add("boxes");
+
 function createBoxes(amount) {
+  let newList = [];
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
     box.style.width = `${30 + i * 10}px`;
@@ -23,14 +25,15 @@ function createBoxes(amount) {
     box.style.backgroundColor = getRandomHexColor();
     box.style.margin = "10px";
     box.style.display = "inline-block";
-    createBox.appendChild(box);
+    newList.push(box);
   }
+  createBox.append(...newList);
 }
 
 btnCreate.addEventListener("click", () => {
-  createBoxes();
   const amount = Number(inputNumber.value);
-  if (amount >= 0 && amount <= 100) {
+  if (amount > 0 && amount <= 100) {
+    createBox.innerHTML = "";
     createBoxes(amount);
   }
   inputNumber.value = "";
