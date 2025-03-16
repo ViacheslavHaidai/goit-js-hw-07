@@ -28,7 +28,9 @@ console.log(images);
 const gallery = document.querySelector(".gallery");
 function createGallery(arr) {
   return arr
-    .map((item) => `<img src="${item.url}" alt="${item.alt}" width="360">`)
+    .map(
+      (item) => `<li><img src="${item.url}" alt="${item.alt}" width="360"></li>`
+    )
     .join("");
 }
 
